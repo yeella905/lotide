@@ -37,7 +37,7 @@ const flatten = (array1) => {
        
     if (Array.isArray(array1[i])) {
       // Recursively flatten the nested array
-      result = result.concat(flatten(array1[i]));
+      result = result.concat((array1[i]));
     } else {
       // Add the element to the result if it's not an array
       result.push(array1[i]);
