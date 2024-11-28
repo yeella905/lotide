@@ -24,11 +24,12 @@ const eqArrays = (array1, array2) => {
 
 const assertArraysEqual = (firstArray, secArray) => {
   if (eqArrays(firstArray,secArray)) {
-    console.log("🟢Assertion passed: true");
+    console.log(`🟢Assertion passed: ${firstArray} === ${secArray}`);
   } else {
-    console.log("🔴Assertion failed: false");
+    console.log(`🔴Assertion failed: ${firstArray} !== ${secArray}`);
   }
   
 };
 
-return assertArraysEqual();
+assertArraysEqual([1,2,3], [1,2,3]); // should pass
+assertArraysEqual([1,2,3], [1,2]); // should fail
