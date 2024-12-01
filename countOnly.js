@@ -16,13 +16,14 @@ const countOnly = function (allItems, itemsToCount) {
   
     for (const item of allItems) {
       console.log(item);
-      if (results[item] === true) {
-        results[item] += 1;
-      } else {
-        results[item] += 1;
+      if (itemsToCount[item]) {
+        if (results[item]) {
+          results[item] += 1;
+        } else {
+          results[item] = 1;
+        }
       }
     }
-  
     return results;
   };
 
@@ -47,8 +48,7 @@ const countOnly = function (allItems, itemsToCount) {
   
  
 
-  console.log(assertEqual(result1["Jason"], 1));
-  console.log(assertEqual(result1["Karima"], undefined));
-  console.log(assertEqual(result1["Fang"], 2));
-  console.log(assertEqual(result1["Agouhanna"], undefined));
-
+assertEqual(result1["Jason"], 1);
+assertEqual(result1["Karima"], undefined);
+assertEqual(result1["Fang"], 2);
+assertEqual(result1["Agouhanna"], undefined);
