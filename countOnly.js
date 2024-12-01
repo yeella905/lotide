@@ -16,10 +16,10 @@ const countOnly = function (allItems, itemsToCount) {
   
     for (const item of allItems) {
       console.log(item);
-      if (results[item]) {
+      if (results[item] === true) {
         results[item] += 1;
       } else {
-        results[item] = 1;
+        results[item] += 1;
       }
     }
   
@@ -52,5 +52,3 @@ const countOnly = function (allItems, itemsToCount) {
   console.log(assertEqual(result1["Fang"], 2));
   console.log(assertEqual(result1["Agouhanna"], undefined));
 
-const results = {};
-return results;
