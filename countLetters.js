@@ -6,7 +6,7 @@ const assertEqual = (actual, expected) => {
     }
   
   };
-
+  
   const countLetters = (allLetters) => {
 
     const forResults = {}
