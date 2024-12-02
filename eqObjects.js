@@ -32,8 +32,17 @@ const eqObjects = (object1, object2) => {
   }
   //Key and Value Comparison:  loop through the keys of one object and check if the corresponding key in the other object has the same value.
   for (const key of Object.keys(object1)) {
-    if (object1[key] !== object2[key]) {
-      return false;
+    // Check if the value is an array
+    if (Array.isArray(object1[key]) && Array.isArray((object2[key]))) {
+      // Use eqArrays for array comparison
+      if (!eqArrays(object1[key], object2[key])) {
+        return false;
+      }
+    } else {
+    // Compare values directly for non-array values
+      if (object1[key] !== object2[key]) {
+        return false;
+      }
     }
   }
   return true;
