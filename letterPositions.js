@@ -47,12 +47,16 @@ const assertEqual = (actual, expected) => {
 
 const letterPositions = (positions) => {
     const results = {};
+    //empty object
     for (let i = 0; i < positions.length; i++) {
+        //loop the whole thing in order to get the character in each specific position.
+        if (positon[i] !== ' ') {//this is a conditional, it won't log a space into the array
         if (positions[i] in results) {
            results = results.push[positions[i]] + 1
         } else {
             results = results.push[positions[i]]
         }
+    }
     }
     return results;
   };
