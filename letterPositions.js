@@ -50,11 +50,13 @@ const letterPositions = (positions) => {
     //empty object
     for (let i = 0; i < positions.length; i++) {
         //loop the whole thing in order to get the character in each specific position.
-        if (positon[i] !== ' ') {//this is a conditional, it won't log a space into the array
+        if (positions[i] !== ' ') {//this is a conditional, it won't log a space into the array
         if (positions[i] in results) {
-           results = results.push[positions[i]] + 1
+             // If key exists, push the current index to the array
+           results[positions[i]].push(i);
         } else {
-            results = results.push[positions[i]]
+            // If key doesn't exist, initialize it with an array [i] containing the current index
+            results[positions[i]] = [i];
         }
     }
     }
