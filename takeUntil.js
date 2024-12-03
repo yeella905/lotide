@@ -23,21 +23,20 @@ const eqArrays = (array1, array2) => {
 
 
 const takeUntil = (array,callBack) => { 
-    //empty array
-    const forResults = [];
+    const results = [];
     //looping throught the array to find the elements
    for (const element of array) {
 // if the callback of x returns true 
 if (callBack(element)) {
     //stop the fuction from continuing downt the list to perform
     //return result, will prevent the function from performing the rest. Basically the same as a break; but bettter to understand visually
-    return forResults;
+    return results;
 }
 //defult .push each ellement into an array
- forResults.push(element);
+ results.push(element);
 }
 //return the placement arrray
-return forResults;
+return results;
 };
 
 
