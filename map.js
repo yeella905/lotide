@@ -42,3 +42,6 @@ const assertEqual = (actual, expected) => {
     }
     
   };
+  const expected_output = ['g', 'c', 't', 'm', 't'];
+  assertArraysEqual(results1, expected_output);
+  
