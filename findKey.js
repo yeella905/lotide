@@ -17,18 +17,16 @@ if (callback(object[key])) {
     return undefined;
 };
 
-  findKey(
-    {
-      "Blue Hill": { stars: 1 },
-      Akaleri: { stars: 3 },
-      noma: { stars: 2 },
-      elBulli: { stars: 3 },
-      Ora: { stars: 2 },
-      Akelarre: { stars: 3 },
-    },
-    (x) => x.stars === 2
-  ); // => "noma"
-
-
-const result = findKey(x => x.stars === 2);
+// Example object and callback
+const testObj = {
+    "Blue Hill": { stars: 1 },
+    Akaleri: { stars: 3 },
+    noma: { stars: 2 },
+    elBulli: { stars: 3 },
+    Ora: { stars: 2 },
+    Akelarre: { stars: 3 }
+  };
+  
+  // Test case for findKey
+const result = findKey(testObj, x => x.stars === 2);
 assertEqual(result, "noma"); // expected to pass
