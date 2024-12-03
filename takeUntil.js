@@ -30,7 +30,8 @@ const takeUntil = (array,callBack) => {
 // if the callback of x returns true 
 if (callBack(element)) {
     //stop the fuction from continuing downt the list to perform
- break;
+    //return result, will prevent the function from performing the rest. Basically the same as a break; but bettter to understand visually
+    return forResults;
 }
 //defult .push each ellement into an array
  forResults.push(element);
