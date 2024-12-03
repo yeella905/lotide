@@ -1,3 +1,4 @@
+
 const assertEqual = (actual, expected) => {
     if (actual === expected) {
       console.log(`🟢Assertion passed: ${actual} === ${expected}`);
@@ -28,4 +29,6 @@ if (callback(object[key])) {
     (x) => x.stars === 2
   ); // => "noma"
 
-  assertEqual(findKey, 2);
+
+const result = findKey(x => x.stars === 2);
+assertEqual(result, "noma"); // expected to pass
