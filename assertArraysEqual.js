@@ -1,3 +1,5 @@
+const eqArrays = require('./eqArrays');
+
 const assertArraysEqual = (firstArray, secArray) => {
   if (eqArrays(firstArray,secArray)) {
     console.log(`🟢Assertion passed: ${firstArray} === ${secArray}`);
