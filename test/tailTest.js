@@ -15,8 +15,8 @@
 const assert = require('chai').assert;
 const tail = require("../tail");
 
-describe("#head", () => {
-    it('returns "Labs" from ["Hello", "Lighthouse", "Labs"]', () => {
-    assert.strictEqual(tail(["Hello", "Lighthouse", "Labs"]))
+describe("#tail", () => {
+    it('returns "lighthouse", "Labs" from ["Hello", "Lighthouse", "Labs"]', () => {
+    assert.strictEqual("lighthouse", "labs" (["Hello", "Lighthouse", "Labs"]))
     });
 });
