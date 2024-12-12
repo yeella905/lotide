@@ -17,6 +17,7 @@ const tail = require("../tail");
 
 describe("#tail", () => {
     it('returns "lighthouse", "Labs" from ["Hello", "Lighthouse", "Labs"]', () => {
-    assert.strictEqual("lighthouse", "labs" (["Hello", "Lighthouse", "Labs"]))
+        const result = tail(["Hello", "Lighthouse", "Labs"]);
+        assert.deepEqual(result, ["Lighthouse", "Labs"]);
     });
 });
