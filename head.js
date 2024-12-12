@@ -1,6 +1,3 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = require("./assertEqual");
-
 const head = (array) => {
   return array[0];
 };

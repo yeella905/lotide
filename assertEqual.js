@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
     console.log(`🟢Assertion passed: ${actual} === ${expected}`);
