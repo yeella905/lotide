@@ -29,5 +29,5 @@ letterPositions: letterPositions,
 middle: middle,
 tail:   tail,
 takeUntil: takeUntil,
-without : without,
+without : without
 };
